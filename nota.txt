@@ -1,0 +1,71 @@
+package tugasarrayd;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Dian
+ */
+public class TugasarrayD {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String KAP;
+        String PROMO;
+        String KHUSUS;
+        String HARGA;
+        String NAMA;
+        String HADIAH;
+        int TOTAL ;
+       
+        System.out.println("-------------------------------------------------");
+        KAP =     "KHARISMA AGUNG PLAZA" ;
+        PROMO =    "Promo Belanja Berhadiah";
+        KHUSUS = "Khusus Pembalian 5 barang pertama" ;
+        HARGA = "Dengan harga minimum RP 100000,00";
+        NAMA = "Bety Etikasari";
+        HADIAH = "Mug cantik";
+                
+        System.out.println(KAP);
+        System.out.println(PROMO);
+        System.out.println(KHUSUS);
+        System.out.println(HARGA);
+        System.out.println("-------------------------------------------------");
+        System.out.println("Masukkan nama pembeli : " +NAMA);
+        
+             Scanner s1 = new Scanner(System.in);
+        
+        System.out.print("Masukkan harga ke-1 : ");
+        int h1 = s1.nextInt();
+        System.out.print("Masukkan harga ke-2 : ");
+        int h2 = s1.nextInt();
+        System.out.print("Masukkan harga ke-3 : ");
+        int h3 = s1.nextInt();
+        System.out.print("Masukkan harga ke-4 : ");
+        int h4 = s1.nextInt();
+        System.out.print("Masukkan harga ke-5 : ");
+        int h5 = s1.nextInt();
+
+       
+        System.out.print("Total harga pembelian atas nama Bety Etikasari adalah = RP " );
+        
+        Scanner s2 = new Scanner(System.in);
+        TOTAL = s2.nextInt();
+    
+       if(TOTAL >= 100000){
+            System.out.println ("SELAMAT...."
+                    + "Anda mendapatkan hadiah " +HADIAH);
+     }
+     else {
+            
+     }   
+        System.out.println("-------------------------------------------------");    
+         
+         System.out.println("Terima Kasih");
+         System.out.println("Anda sudah belanja di "+ KAP);
+     
+    }
+}
